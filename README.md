@@ -5,7 +5,7 @@
 
 - 공개 주소: https://cybertrade91.github.io/seojunmom/
 - 상품 관리 시트: [서준엄마네 웹사이트](https://docs.google.com/spreadsheets/d/1Hbdjt6nM1cRTJX05f6y8P49eu7UCAYtAJ-eBpnRJM1w/edit)
-- 직원용 안내 문서: [서준엄마네 상품 관리 안내](https://claude.ai/code/artifact/32b9d943-081e-496c-8c87-714881c6cd08)
+- 직원용 안내 문서: [서준엄마네 상품 관리 안내 (구글 문서)](https://docs.google.com/document/d/1YVHb05dHelJ2ttq2-bpDqgIkdq1EHKF5hj67VMxkG6w/edit) — 회사 드라이브 "QED 인수인계" 폴더
 
 ## 어떻게 움직이나요
 
