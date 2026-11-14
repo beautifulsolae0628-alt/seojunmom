@@ -3,7 +3,7 @@
 택배 전단지의 QR코드로 들어오는 서준엄마네 상품 소개 페이지입니다.
 이 페이지에서는 구매하지 않고, 상품·카테고리를 누르면 네이버 스마트스토어로 이동합니다.
 
-- 공개 주소: https://rlgus1520-boop.github.io/seojunmom/
+- 공개 주소: https://cybertrade91.github.io/seojunmom/
 - 상품 관리 시트: [서준엄마네 웹사이트](https://docs.google.com/spreadsheets/d/1Hbdjt6nM1cRTJX05f6y8P49eu7UCAYtAJ-eBpnRJM1w/edit)
 - 직원용 안내 문서: [서준엄마네 상품 관리 안내](https://claude.ai/code/artifact/32b9d943-081e-496c-8c87-714881c6cd08)
 
@@ -28,11 +28,20 @@
 
 | 용도 | 주소 |
 |---|---|
-| 손님용 (QR코드가 여는 주소) | https://rlgus1520-boop.github.io/seojunmom/ |
-| 점검용 (데이터 출처·문제 줄 표시, 클릭 기록 안 함) | https://rlgus1520-boop.github.io/seojunmom/?check&nolog |
-| 비상용 모드 시험 (시트 대신 data.js 사용) | https://rlgus1520-boop.github.io/seojunmom/?check&fallback&nolog |
-| 저장소 (GitHub) | https://github.com/rlgus1520-boop/seojunmom |
+| 손님용 (QR코드가 여는 주소) | https://cybertrade91.github.io/seojunmom/ |
+| 점검용 (데이터 출처·문제 줄 표시, 클릭 기록 안 함) | https://cybertrade91.github.io/seojunmom/?check&nolog |
+| 비상용 모드 시험 (시트 대신 data.js 사용) | https://cybertrade91.github.io/seojunmom/?check&fallback&nolog |
+| 저장소 (GitHub) | https://github.com/cybertrade91/seojunmom |
 | 클릭 기록기 (앱스 스크립트) | `data.js` 의 `clickLog` |
+| 옛 주소 (2026-10 인쇄 전단지 QR) | https://rlgus1520-boop.github.io/seojunmom/ → 새 주소로 자동 이동 |
+
+## 주소 이전 기록 (2026-11)
+
+- 사이트 저장소를 권기현(rlgus1520-boop) 개인 계정에서 김민중 님 계정(cybertrade91)으로 옮겼습니다.
+- 2026년 10월에 인쇄한 전단지 QR코드는 옛 주소를 가리킵니다. 옛 주소로 들어오면 새 주소로 자동 이동합니다.
+  - 이 이동은 rlgus1520-boop 계정의 `rlgus1520-boop.github.io` 저장소가 맡습니다. **그 계정과 저장소를 지우면 옛 QR코드가 끊깁니다.**
+- 새로 인쇄하는 전단지에는 `qr/seojunmom-qr-1200.png` (새 주소)를 씁니다. `qr/old-print-2026-10-qr-*` 는 옛 주소 기록용입니다.
+- 길게 보면 회사 도메인(예: seojunmom.kr)을 사서 연결하고 QR코드를 그 도메인으로 바꾸면, 계정이 바뀌어도 QR코드를 다시 만들 필요가 없습니다.
 
 ## 파일 구성
 
@@ -45,7 +54,7 @@
 | `apps-script/click-log.gs` | 시트에 클릭을 적는 앱스 스크립트 원본 | 드묾 |
 | `tests/sheet-test.js` | 자동 시험 61개 | 코드를 바꿀 때마다 실행 |
 | `assets/` | 로고, 서체, 배너·현장·상품·아이콘 사진 | 사진 교체 시 |
-| `qr/` | 인쇄용 QR코드 (손님용 주소) | 주소가 바뀔 때만 |
+| `qr/` | 인쇄용 QR코드. `seojunmom-qr-*` 는 새 주소, `old-print-2026-10-qr-*` 는 옛 주소 | 주소가 바뀔 때만 |
 | `.env.example` | 비밀 키 적는 법 예시. 지금은 비밀 키가 필요 없음 | 없음 |
 
 비밀 키나 비밀번호가 필요한 기능을 나중에 붙이면 `.env` 파일에 적습니다.
@@ -160,7 +169,7 @@ git push --force                  # 공개 사이트도 그 시점으로
 
 1. 시트 메뉴에서 **확장 프로그램 > Apps Script** 를 누릅니다.
 2. `Code.gs` 내용을 모두 지우고 `apps-script/click-log.gs` 내용을 붙여 넣은 뒤 저장합니다.
-   - 내용 보기: https://raw.githubusercontent.com/rlgus1520-boop/seojunmom/main/apps-script/click-log.gs
+   - 내용 보기: https://raw.githubusercontent.com/cybertrade91/seojunmom/main/apps-script/click-log.gs
 3. **배포 > 새 배포 > 웹 앱** 을 고르고, 실행은 **나**, 액세스는 **모든 사용자** 로 배포합니다.
 4. 권한 창에서 **액세스 승인** 후, "확인하지 않은 앱" 경고가 나오면 **고급 > 이동 > 허용** 을 누릅니다.
 5. 웹 앱 URL(`.../exec`)을 `data.js` 의 `clickLog` 에 넣고 배포합니다.
